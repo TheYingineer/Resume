@@ -19,20 +19,21 @@ body {
 .leftcolumn{
     border: 5px solid palevioletred;
     background-color: yellowgreen;
-    min-width: 100px;
-    max-height: none;
+    width: 100%;
+    height: 100%;
+    /* max-height: none; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 50pt 1fr;
+    grid-template-rows: fit-content fit-content 1fr;
     align-items: center;
     justify-content: center;
 }
 
 /* **************pic********** */
-.pictureHere {
+.pictureHolder {
     border: 5px solid palevioletred;
-    min-width: 50px;
-    min-height: 50px;      
+    min-width: 10px;
+    min-height: 10px;      
     align-items: center;
     width: auto;
     display: flex;
@@ -44,10 +45,17 @@ body {
 .Userpic {
     border-radius: 50%;
     border: 5px solid white;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 50px;
+    min-height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
+
+
 
 /* ***********end of picture ****** */
 
@@ -64,7 +72,7 @@ body {
 }
 
 .jobtitle span {
-    /* border: 5px solid palevioletred; */
+    border: 5px solid palevioletred;
     display: flex;
     align-items: center;
     min-height: fit-content;
@@ -73,11 +81,20 @@ body {
     width: auto;
     justify-content: space-around;
 }
-
 /* *******************end of jobtitle****** */
 
 
 /* ********Contact info************* */
+
+
+.sociallink img{
+    
+    max-height: 50px;
+    max-width: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .sociallink {
     background-color: blueviolet;
@@ -88,6 +105,17 @@ body {
     align-items: center;
     justify-content: center;
 
+}
+
+.history {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin-left: 0%; */
+    justify-content: left;
+    align-items: left;
+    padding:0%;
 }
 
 .word {
@@ -105,15 +133,6 @@ hr { background-color: gray;
      margin-left: auto;
 }
 
-.sociallink img{
-    
-    max-height: 50px;
-    max-width: 50px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 
 
@@ -126,7 +145,7 @@ hr { background-color: gray;
     border: 5px solid palevioletred;
     background-color: green;
     width: auto;
-    height: max-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
